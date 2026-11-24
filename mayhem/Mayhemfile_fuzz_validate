@@ -1,0 +1,10 @@
+project: savantenvs/DirectXMesh
+target: fuzz_validate
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_validate/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_validate
+    libfuzzer: true
+    timeout: 5

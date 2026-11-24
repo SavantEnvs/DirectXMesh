@@ -1,0 +1,4 @@
+# build trees written by mayhem/build.sh (removed by the grader's `git clean -ffdX`)
+/build-fuzz/
+/build-test/
+/out/

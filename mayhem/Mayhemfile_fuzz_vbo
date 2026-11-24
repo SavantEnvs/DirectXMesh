@@ -1,0 +1,10 @@
+project: savantenvs/DirectXMesh
+target: fuzz_vbo
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_vbo/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_vbo
+    libfuzzer: true
+    timeout: 5

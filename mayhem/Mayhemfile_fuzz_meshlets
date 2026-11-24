@@ -1,0 +1,10 @@
+project: savantenvs/DirectXMesh
+target: fuzz_meshlets
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_meshlets/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_meshlets
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,11 @@
+# Commit-image build context: the FULL repo incl. .git. Upstream tracks a `build/` dir (CMake helpers),
+# so it is NOT ignored here; only our own build trees and local cruft are.
+mayhem/build-fuzz/
+mayhem/build-test/
+mayhem/out/
+out/
+*.o
+*.a
+.DS_Store
+*.swp
+*~

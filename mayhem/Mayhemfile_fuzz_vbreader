@@ -1,0 +1,10 @@
+project: savantenvs/DirectXMesh
+target: fuzz_vbreader
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_vbreader/testsuite
+
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_vbreader
+    libfuzzer: true
+    timeout: 5
